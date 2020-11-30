@@ -1,0 +1,5 @@
+distance from a coordinate to another = sqrt((x1-x2)^2 + (y1-y2)^2)
+
+1. take in all necessary values and place them in double 2D arrays.
+2. initialize adjacency list and fill in distances for going from each vertex(coordinate) to everywhere else.
+3. run Djikstra's Algorithm to get the SSSP.

@@ -1,0 +1,12 @@
+Pseudocode:
+enum Status {
+  FOLDED,
+  FIRST,
+  PALM
+}
+1) Represent players as list of pairs (Player, State). State can either be "folded", "fist", or "palm"
+2) Rhyme selects the player (i + state - 1) % num of players after player i.
+3) if (p, folded) is hit, remove it and insert 2 (p, fist) at current position.
+4) if (p, fist) is hit, replace with (p, palm).
+5) if (p, palm) is hit remove.
+6) repeat until only one hand left.

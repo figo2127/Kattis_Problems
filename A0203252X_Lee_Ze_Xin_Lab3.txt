@@ -1,0 +1,19 @@
+Set up StringBuffer, PrintWriter, and BufferedReader. 
+
+class FirstTwo implements Comparable<FirstTwo>:
+//FirstTwo is an object which contains the first 2 characters //of a String.
+	public int compareTo(FirstTwo value):
+		- compare first characters and return the corresponding integer value.
+		- If 0 is the returned value, then we compare the second characters.
+
+main():
+Take in the first integer input as N.
+Store 
+if N>0, then we use the Loop below.
+
+	Loop: 
+		- Populate an ArrayList of String with our names from the BufferedReader.
+		- Collections.sort(arrlist)
+		- then print out using printwriter and Stringbuffer.
+	
+		

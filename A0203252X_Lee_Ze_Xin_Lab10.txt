@@ -1,0 +1,6 @@
+undirected, weighted edges.
+
+1. form an adjacency matrix
+2. turn half of matrix into edge list
+3. run kruskal's algorithm
+4. for each edge added to T, we need to print it out.

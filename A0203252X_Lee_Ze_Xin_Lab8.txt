@@ -1,0 +1,15 @@
+while(true) {
+	1) scan for n, if n == -1 break
+	2) create an adjacency matrix of nxn
+	3) take in values and fill the adjacency matrix
+	4) use a for loop with 2 nested for loops 
+	5) if (adjMatrix[i][j] == 1) { then we found an edge, now search for edges that can form triangle
+                        for (int k = j; k < n; k++) {
+                            if (adjMatrix[i][k] == 1 && adjMatrix[j][k] == 1) {
+                                triangle = true;
+                                break;
+                            }
+                        }
+                    }
+	6) if we found triangle, then break out of the inner 2 for loops
+	7) At end of checking for each vertex, if we haven't break out means we have not found a triangle. Thus a strong vertex(no need to print). Else print it.

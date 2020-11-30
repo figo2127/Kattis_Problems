@@ -1,0 +1,15 @@
+1) Read numResearchers as n, minsInactiveToLock as m.
+2) Read and store arrivalTime and stayTime in an ArrayList of Researchers, R.
+3) Initialize a PQ<WorkStation> W.
+4) Read in lines and store them into our R arraylist, sort them in terms of earliest start time. //since we got the schedule
+5) For each of the researcher in R, check if W is empty, if yes we create a new workstation and add to W.
+	Else we poll from W:
+		if currentResearcher.start == W.poll().endTime:
+			count++;
+			W.offer(new WorkStation with updated time)
+		else if (currResearcher.start <= W.poll().extendedEnd && currResearcher.start > W.poll().endTime):
+			count++;
+		
+	W.offer(newStation);
+
+	

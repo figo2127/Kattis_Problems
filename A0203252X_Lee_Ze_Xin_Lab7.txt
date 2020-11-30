@@ -1,0 +1,7 @@
+In our Comparator, we first compare the size of quest to put the largest energy quest in front. If sizes of quest are equal, compare their gold reward and put larger gold reward in front.
+
+Main():
+1) Initialize a TreeMap<Quest, QuestCount>
+2） Take in our values, use .split(" ") to split arguments
+3) For Add: if we have duplicate Quest, we do TreeMap.get(Quest) and increment the QuestCount.count via QuestCount.count++
+4) For Query: while (energyLeft != 0 && foundQuest) { if we found existing Quest we decrement its count, if we can't find just exit the while loop }

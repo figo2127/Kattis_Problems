@@ -1,0 +1,12 @@
+if < two course combinations are the same, then everyone takes the most popular course.
+
+if there are >=2 course combi of same popularity, then we include all students who take those course combi.
+
+Steps:
+1) take in a user input n
+2) Create a hashmap of size n, and int Max = 1 to keep track of the course combi with most popularity, and int freq = 0, to keep track of the freq the course combi with most popularity occur.
+3) store for each of the entries in (user inputs of course combi) as key, if the hashset exists, increment its value by 1, if updated hashset is our most popular course combi, then freq++. Else if the updated counter > Max, we update Max and reset freq to 1. If hashset does not exist we add the hashset to our hashmap with value 1.
+6) if M == 1, we print n.
+7) else we print Max*freq
+
+Using a HashMap<HashSet<Integer>, Integer>

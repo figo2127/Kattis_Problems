@@ -1,0 +1,14 @@
+1) Scan for r, c, and store the inputs in a 2D array char array named arr.
+2) Initialize a boolean 2D array named visited.
+3) for each char in arr, if char == 'L', run floodFill() on L's coordinates. Remember to check for !visited[a][b] before count++.
+	floodFill(int x, int y):
+		if (x || y out of range || visited[x][y] || arr[x][y] == 'W'):
+			return;
+		visited[x][y] = true;
+		// Recur for north, east, south and west
+		floodFill(x+1, y);
+        	floodFill(x-1, y);
+        	floodFill(x, y+1);
+        	floodFill(x, y-1);
+	end floodFill;
+4) Print out count.
